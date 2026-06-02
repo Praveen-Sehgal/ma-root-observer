@@ -1,1 +1,197 @@
-Work in progress.
+# Governance
+
+## Purpose
+
+Governance defines how MA Root Observer is configured, operated, reviewed, and trusted.
+
+The framework separates guidance from control.
+
+The Observer provides assessments and recommendations. Enforcement decisions belong to the Entity, the user, or the organization operating the system.
+
+---
+
+## Governance Principles
+
+### 1. Observer as Advisor
+
+The Observer identifies risks, concerns, and possible consequences.
+
+The Observer does not directly control the Entity.
+
+---
+
+### 2. Entity Autonomy
+
+The Entity remains responsible for final action.
+
+An Entity may accept, ignore, or override Observer recommendations.
+
+All decisions should be logged.
+
+---
+
+### 3. Policy Ownership
+
+Organizations may define policies that respond to Observer assessments.
+
+Examples:
+
+* Continue after warning
+* Require human review
+* Require additional evidence
+* Route to compliance team
+* Block execution through an external policy system
+
+Policy enforcement occurs outside the Observer.
+
+---
+
+### 4. Transparency
+
+Observer assessments should be explainable and reviewable.
+
+Each observation should include enough information to understand:
+
+* What was assessed
+* What risks were identified
+* What recommendation was produced
+* What action was ultimately taken
+
+---
+
+### 5. Auditability
+
+Governance requires durable records.
+
+Observation logs should support:
+
+* Review
+* Accountability
+* Pattern detection
+* Dispute resolution
+* Future learning
+
+---
+
+## Roles
+
+### MA Root
+
+Defines the framework standards, interfaces, and baseline governance model.
+
+MA Root does not make individual decisions.
+
+---
+
+### Observer
+
+Evaluates actions and generates advisory assessments.
+
+The Observer may classify a situation as APPROVE, WARN, ESCALATE, or CRITICAL.
+
+---
+
+### Entity
+
+Performs the actual action or decision.
+
+Examples include:
+
+* AI model
+* AI agent
+* Workflow
+* Application
+* Human decision process
+
+---
+
+### Operator
+
+The person or organization deploying the framework.
+
+The Operator decides which policies, lenses, and enforcement mechanisms are used.
+
+---
+
+### Human Reviewer
+
+A person responsible for reviewing escalated or high-risk cases.
+
+---
+
+## Assessment Outcomes
+
+### APPROVE
+
+No significant concerns identified.
+
+### WARN
+
+Potential concerns identified.
+
+### ESCALATE
+
+Human review recommended.
+
+### CRITICAL
+
+Significant concern or potential harm identified.
+
+CRITICAL does not automatically mean execution is blocked.
+
+Blocking, approval gates, or escalation workflows are external policy decisions.
+
+---
+
+## Configuration
+
+Operators may configure:
+
+* Evaluation lenses
+* Risk thresholds
+* Logging level
+* Human review workflow
+* Retention rules
+* Privacy rules
+* External enforcement behavior
+
+Configuration should be documented and versioned.
+
+---
+
+## Accountability
+
+MA Root Observer should make it possible to answer:
+
+* What did the Entity intend to do?
+* What did the Observer identify?
+* What recommendation was given?
+* What decision was made?
+* Who or what made the final decision?
+* What happened afterward?
+
+---
+
+## Anti-Corruption Principle
+
+The Observer should not be silently modified to justify desired outcomes.
+
+Changes to Observer logic, policies, or evaluation lenses should be:
+
+* Versioned
+* Logged
+* Reviewable
+* Attributable
+
+---
+
+## Future Governance Considerations
+
+Future implementations may include:
+
+* Independent third-party review
+* Public transparency reports
+* Multi-observer governance
+* Tamper-evident logging
+* Community-maintained evaluation lenses
+* Cross-organization standards
