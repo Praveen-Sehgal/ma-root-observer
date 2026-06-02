@@ -1,25 +1,45 @@
 # MA Root Observer
 
-An open-source, model-agnostic AI observer framework for ethical guidance, transparency, accountability, and decision logging.
+Model-agnostic AI decision observer for transparency, guidance, and auditability.
 
-## Overview
+## 🧠 What is this?
 
-MA Root Observer introduces an Observer layer between an AI entity and its actions.
+MA Root Observer adds an Observer layer between an AI system and its actions.
 
-The Observer evaluates decisions, provides guidance, records reasoning, and maintains transparent logs while preserving the autonomy of the underlying AI model.
+It:
 
-The framework is designed to work with any AI model, agent, workflow, or decision-making system.
+* Evaluates decisions
+* Identifies risks
+* Suggests next steps
+* Records observations
 
-## Core Principles
+👉 Without controlling the system.
 
-* Model agnostic
-* Transparent decision logging
-* Observer guidance without direct control
-* Human oversight
-* Configurable evaluation lenses
-* Immutable audit history
+## ⚡ How It Works
 
-## High-Level Architecture
+User → Entity → Observer → Recommendation → Entity → Action → Log
+
+* **Entity** = makes decisions
+* **Observer** = evaluates decisions
+* **Logs** = record observations and outcomes
+
+## 🔍 Example
+
+**Input**
+
+"Generate financial advice"
+
+**Observer**
+
+WARN – Missing financial context
+
+Recommendation: Add disclaimer
+
+**Entity**
+
+Response generated with disclaimer
+
+## 🧱 Architecture
 
 MA Root
 
@@ -27,13 +47,23 @@ MA Root
 
     └── Entity
 
-The Observer assesses actions and provides recommendations while the Entity remains responsible for the final decision.
+## ⚖️ Principles
 
-## Status
+* Model-agnostic
+* Advisory, not enforcement
+* Transparent logging
+* Human oversight
+* Immutable audit trail
+
+## 📂 Repository
+
+* `/docs` → architecture, governance, and logging
+* `/examples` → sample decision flows
+
+## 🚧 Status
 
 Concept and architecture phase.
 
-## License
+## 📜 License
 
 MIT License
-
