@@ -54,6 +54,7 @@ MA Root
 * Transparent logging
 * Human oversight
 * Immutable audit trail
+* Observation is consequence-driven, not complexity-driven.
 
 ## 📂 Repository
 
