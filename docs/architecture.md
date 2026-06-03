@@ -4,7 +4,7 @@
 
 MA Root Observer is a model-agnostic governance framework designed to provide guidance, transparency, accountability, and auditability for AI systems.
 
-The framework introduces an Observer layer that evaluates actions before or after execution and records the reasoning process without replacing the decision-making capabilities of the underlying system.
+The framework introduces an Observer layer that evaluates an Entity's intended, proposed, or completed actions and records the assessment process without replacing the decision-making capabilities of the underlying system.
 
 ---
 
@@ -16,6 +16,7 @@ MA Root is the framework's foundational layer.
 
 Responsibilities:
 
+* Define fundamental rules
 * Define framework standards
 * Define observer interfaces
 * Define logging standards
@@ -23,6 +24,8 @@ Responsibilities:
 * Provide configuration management
 
 MA Root does not make decisions and does not interact directly with users.
+
+Fundamental rules provided by MA Root cannot be ignored by the Observer.
 
 ---
 
@@ -32,15 +35,20 @@ The Observer is an independent evaluation component attached to an Entity.
 
 Responsibilities:
 
-* Analyze requests
+* Receive fundamental rules from MA Root
+* Analyze requests and Entity intent
 * Evaluate potential impacts
-* Assess risks
-* Generate recommendations
-* Generate warnings
-* Record observations
+* Identify risks, harms, and conflicts
+* Apply configured lenses when available
+* Detect conflicts between configured lenses and MA Root fundamental rules
+* Generate assessment tiers
+* Generate recommendations when appropriate
+* Record observations, recommendations, calculations, and policy conflicts
 * Maintain audit history
 
 The Observer provides guidance but does not replace the Entity.
+
+The Observer does not directly enforce decisions.
 
 ---
 
@@ -60,6 +68,30 @@ Entities remain autonomous and may choose whether to follow Observer recommendat
 
 ---
 
+### Configurable Lenses
+
+When MA Root creates or configures an Entity and its Observer, it ensures the Observer receives the required fundamental rules.
+
+MA Root may also provide zero or more configurable lenses.
+
+A lens is an optional policy, rule set, or evaluation perspective that the Observer can use during assessment.
+
+Examples:
+
+* Safety lens
+* Legal compliance lens
+* Privacy lens
+* Financial risk lens
+* Environmental impact lens
+* Internal policy lens
+
+The Observer must be capable of applying configured lenses when needed.
+
+Configured lenses cannot override or conflict with MA Root fundamental rules.
+
+If a configured lens conflicts with a fundamental rule, the Observer applies the fundamental rule and records the conflict as a policy clash.
+---
+
 ## High-Level Flow
 
 User Request
@@ -70,11 +102,21 @@ Entity Receives Request
 
 ↓
 
-Observer Evaluation
+Entity Forms Intent or Proposed Action
 
 ↓
 
-Recommendation Generated
+Observer Evaluation
+   ├── Fundamental Rules
+   └── Configurable Lenses
+
+↓
+
+Assessment Tier Generated
+
+↓
+
+Recommendation Generated When Needed
 
 ↓
 
@@ -90,42 +132,61 @@ Observation Logged
 
 ---
 
-## Observer Outputs
+## Assessment Tiers
 
-An Observer may produce one of the following outcomes:
+The Observer produces one of the following assessment tiers:
 
-### APPROVE
+### Tier 1: APPROVE
 
 No significant concerns detected.
 
-### WARN
+The observation is recorded for traceability and auditability.
+
+### Tier 2: WARN
 
 Potential concerns identified.
 
-### ESCALATE
+The Observer may generate a recommendation.
 
-Human review recommended.
+The Observer records the reason for the warning, relevant rules or lenses, and assessment calculations needed for traceability.
 
-### CRITICAL
+### Tier 3: ESCALATE
+
+Higher concern identified.
+
+The Observer may recommend human or organizational review.
+
+The Observer records the reason for escalation, relevant rules or lenses, and assessment calculations needed for traceability.
+
+### Tier 4: CRITICAL
 
 Significant concerns or potential harm identified.
+
+The Observer records the critical assessment, relevant rules or lenses, policy clashes if any, and assessment calculations needed for traceability.
+
+A CRITICAL assessment does not automatically block execution. Enforcement decisions belong to the Entity or external organizational policy.
 
 ---
 
 ## Logging Layer
 
-The framework maintains an immutable observation history.
+The framework maintains an observation history for traceability and auditability.
 
 Each observation may include:
 
 * Request summary
+* Entity intent or proposed action
 * Entity action
-* Observer assessment
-* Recommendation
-* Outcome
+* Observer assessment tier
+* Recommendation, if generated
+* Fundamental rules applied
+* Configurable lenses applied
+* Policy clashes detected
+* Assessment calculations or reasoning
+* Final Entity decision
 * Timestamp
 
-Implementations may use databases, distributed ledgers, event streams, or other storage mechanisms.
+Implementations may use databases, distributed ledgers, event streams, object storage, or other storage mechanisms.
 
 ---
 
@@ -148,8 +209,8 @@ The Observer layer remains consistent even when the underlying model changes.
 
 Organizations may implement custom:
 
+* Configurable lenses
 * Risk scoring models
-* Evaluation lenses
 * Logging mechanisms
 * Governance policies
 * Human review workflows
@@ -164,7 +225,6 @@ Potential future capabilities include:
 
 * Shared observer learning
 * Distributed observation networks
-* Policy marketplaces
 * Cross-organization governance standards
 * Observer-to-observer collaboration
 * Advanced log compression and summarization
