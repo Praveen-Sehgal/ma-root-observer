@@ -1,26 +1,26 @@
 # MA Root Observer
 
-Model-agnostic AI decision observer for transparency, guidance, and auditability.
+Model-agnostic governance architecture for transparency, guidance, accountability, and auditability in intelligent systems.
 
 ## 🧠 What is this?
 
-MA Root Observer adds an Observer layer between an AI system and its actions.
+MA Root Observer introduces an Observer layer between an Entity and its actions.
 
-It:
-
-* Evaluates decisions
+* assesses actions and outcomes
 * Identifies risks
 * Suggests next steps
 * Records observations
 
 👉 Without controlling the system.
 
+MA Root Observer defines a governance architecture that separates assessment, decision-making, enforcement, and accountability.
+
 ## ⚡ How It Works
 
-User → Entity → Observer → Recommendation → Entity → Action → Log
+User → Entity ↔ Observer → Entity Decision → Action → Log
 
 * **Entity** = makes decisions
-* **Observer** = evaluates decisions
+* **Observer** = assesses actions and outcomes
 * **Logs** = record observations and outcomes
 
 ## 🔍 Example
@@ -41,11 +41,17 @@ Response generated with disclaimer
 
 ## 🧱 Architecture
 
-MA Root
+MA Core
 
-└── Observer
+   Observer ↔ Entity
 
-    └── Entity
+          ↓
+
+        Outcome
+
+          ↓
+
+          Log
 
 ## ⚖️ Principles
 
@@ -55,6 +61,7 @@ MA Root
 * Human oversight
 * Immutable audit trail
 * Observation is consequence-driven, not complexity-driven.
+* Assessment, decision-making, and enforcement are separate responsibilities.
 
 ## 📂 Repository
 
