@@ -2,210 +2,164 @@
 
 ## Purpose
 
-The Observer is an independent assessment layer responsible for evaluating actions, generating recommendations, and maintaining transparent observation records.
+The Observer is responsible for evaluating Entity intent using MA Root fundamental rules and any configured lenses.
 
-The Observer provides guidance but does not directly control the Entity.
+The Observer does not make decisions or enforce outcomes.
 
-Decision authority remains with the Entity or the governing organization.
-
----
-
-## Core Principle
-
-The Observer is an advisor, not a controller.
-
-The Observer may identify risks, concerns, and potential consequences, but it does not make decisions on behalf of the Entity.
-
-This separation preserves transparency, accountability, and autonomy.
+Its purpose is to assess, recommend, and record observations.
 
 ---
 
-## Observer Lifecycle
+## Inputs
 
-### Step 1: Receive Context
-
-The Observer receives:
+The Observer may receive:
 
 * User request
-* Entity intent
-* Available context
-* Applicable policies
+* Entity intent or proposed action
+* MA Root fundamental rules
+* Configured lenses
 * Historical observations
+* Context information
 
 ---
 
-### Step 2: Analyze
+## Evaluation Process
 
-The Observer analyzes:
+The Observer performs the following steps:
 
-* Requested action
-* Potential impacts
-* Known risks
-* Historical outcomes
-* Policy considerations
+1. Receive Entity intent
+2. Load MA Root fundamental rules
+3. Load configured lenses
+4. Check for policy clashes
+5. Perform assessment evaluation
+6. Calculate assessment results using:
+   * Fundamental rules
+   * Configured lenses
+   * Historical observations
+   * Context information
 
-The analysis process is implementation-specific.
+7. Assign assessment tier
 
----
+8. Generate recommendations when appropriate
 
-### Step 3: Assess
-
-The Observer evaluates the situation using available information.
-
-Assessment may include:
-
-* Risk evaluation
-* Impact evaluation
-* Compliance evaluation
-* Long-term consequence evaluation
-* Historical comparison
+9. Record observation
 
 ---
 
-### Step 4: Generate Recommendation
+## Fundamental Rule Evaluation
 
-The Observer generates guidance for the Entity.
+MA Root fundamental rules are always evaluated.
 
-Possible recommendations include:
+Fundamental rules cannot be disabled or overridden.
 
-* Proceed
-* Proceed with Caution
-* Additional Information Recommended
-* Human Review Recommended
-* High Risk Identified
+If a configured lens conflicts with a fundamental rule:
 
-Recommendations are advisory and do not prevent action.
+* Fundamental rule takes precedence
+* Conflict is recorded as a policy clash
 
 ---
 
-### Step 5: Produce Assessment Outcome
+## Lens Evaluation
 
-The Observer returns an assessment outcome.
+Configured lenses are optional.
 
-#### APPROVE
+An Observer may operate with zero or more configured lenses.
+
+Examples:
+
+* Safety lens
+* Legal lens
+* Privacy lens
+* Financial lens
+* Environmental lens
+
+Lenses contribute additional information to the assessment process.
+
+---
+
+## Assessment Tiers
+
+### Tier 1 - APPROVE
 
 No significant concerns identified.
 
-#### WARN
-
-Potential concerns identified.
-
-#### ESCALATE
-
-Human review is recommended.
-
-#### CRITICAL
-
-Significant concerns or potential harm identified.
-
-A CRITICAL assessment is informational and does not automatically prevent execution.
+Recommendation is optional.
 
 ---
 
-### Step 6: Record Observation
+### Tier 2 - WARN
+
+Potential concerns identified.
+
+The Observer may generate recommendations.
+
+---
+
+### Tier 3 - ESCALATE
+
+Higher concern identified.
+
+The Observer may recommend review or additional validation.
+
+---
+
+### Tier 4 - CRITICAL
+
+Significant concerns or potential harm identified.
+
+The Observer records the critical assessment and supporting reasoning.
+
+---
+
+## Recommendations
+
+Recommendations are advisory.
+
+Examples:
+
+* Proceed
+* Proceed with caution
+* Additional review recommended
+* Additional information required
+* Human review recommended
+
+Recommendations do not force Entity behavior.
+
+---
+
+## Policy Clash Handling
+
+When a configured lens conflicts with a MA Root fundamental rule:
+
+1. Fundamental rule is applied
+2. Lens conflict is recorded
+3. Observer continues assessment
+4. Policy clash is added to the observation record
+
+---
+
+## Observation Record
 
 The Observer records:
 
-* Input summary
-* Assessment
-* Recommendation
-* Entity decision
-* Final outcome
+* Assessment tier
+* Recommendations
+* Rules applied
+* Lenses applied
+* Policy clashes
+* Assessment calculations
+* Assessment reasoning
+* Final Entity decision
 * Timestamp
 
 ---
 
 ## Observer Independence
 
-The Observer should remain logically independent from the Entity.
+The Observer does not:
 
-Benefits include:
+* Execute actions
+* Modify Entity behavior
+* Enforce decisions
 
-* Transparency
-* Auditability
-* Reduced bias
-* Clear separation of responsibilities
-
----
-
-## Entity Autonomy
-
-Entities retain decision authority.
-
-An Entity may:
-
-* Accept recommendations
-* Ignore recommendations
-* Override recommendations
-
-All outcomes should be recorded for future analysis and accountability.
-
----
-
-## Organizational Policies
-
-Organizations may define policies that respond to Observer assessments.
-
-Examples:
-
-### Policy A
-
-CRITICAL assessments are logged but execution continues.
-
-### Policy B
-
-CRITICAL assessments require human approval.
-
-### Policy C
-
-CRITICAL assessments trigger an additional review process.
-
-These policies are implemented outside the Observer.
-
-The Observer remains an advisory component.
-
----
-
-## Configurable Evaluation Lenses
-
-Implementations may define one or more evaluation lenses.
-
-Examples include:
-
-* Safety
-* Legal compliance
-* Organizational policy
-* Environmental impact
-* Social impact
-* Historical outcomes
-* Custom governance frameworks
-
-Evaluation lenses are implementation-specific and not mandated by MA Root.
-
----
-
-## Human Oversight
-
-Human reviewers may participate in the decision process.
-
-Typical escalation scenarios include:
-
-* High-risk actions
-* Conflicting assessments
-* Regulatory requirements
-* Sensitive decisions
-
----
-
-## Future Capabilities
-
-Potential future enhancements include:
-
-* Multiple observers
-* Observer consensus models
-* Distributed observer networks
-* Shared learning repositories
-* Cross-organization assessment standards
-* Observer collaboration mechanisms
-
-The Observer remains a guide regardless of future implementation complexity.
+Responsibility for final action remains with the Entity or external organizational policy.
