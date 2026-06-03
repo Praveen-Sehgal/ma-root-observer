@@ -6,7 +6,7 @@ Model-agnostic governance architecture for transparency, guidance, accountabilit
 
 MA Root Observer introduces an Observer layer between an Entity and its actions.
 
-* assesses actions and outcomes
+* Assesses actions and outcomes
 * Identifies risks
 * Suggests next steps
 * Records observations
