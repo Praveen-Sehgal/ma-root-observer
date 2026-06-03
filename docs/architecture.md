@@ -106,11 +106,9 @@ Potential concerns identified.
 
 Human review recommended.
 
-### HALT
+### CRITICAL
 
-Critical concerns detected according to configured policies.
-
-HALT behavior is implementation-specific and may be configured differently by each deployment.
+Significant concerns or potential harm identified.
 
 ---
 
