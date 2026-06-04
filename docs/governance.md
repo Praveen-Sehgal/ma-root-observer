@@ -71,7 +71,20 @@ Observation logs should support:
 * Dispute resolution
 * Future learning
 
----
+## Entity Accountability
+
+The Entity remains accountable for final decisions and actions.
+
+This includes situations where:
+
+- Observer recommendations are accepted
+- Observer recommendations are modified
+- Observer recommendations are ignored
+- Observer recommendations are overridden
+
+The Observer provides assessment and guidance.
+
+Responsibility for the final decision remains with the Entity, human reviewer, organization, or other designated decision authority.
 
 ## Roles
 
