@@ -159,3 +159,29 @@ The appropriate balance depends on organizational requirements.
 MA Root Observer does not require a specific implementation.
 
 Organizations may choose observer architectures that match their performance, cost, and governance needs.
+
+## Consequence-Based Observation
+
+MA Root primarily manages cost through consequence-based observation rather than uniform observation.
+
+Activities are assigned Observation Tiers based on potential impact, risk, and consequence.
+
+Low-consequence activities may require minimal assessment and logging, while higher-consequence activities may require deeper analysis, additional evidence, and more extensive observation records.
+
+This allows governance resources to be focused where they provide the greatest value.
+
+## Tiered Resource Allocation
+
+Observation effort should be proportional to consequence.
+
+Tier 0 and Tier 1 activities are expected to consume fewer governance resources than Tier 3 or Tier 4 activities.
+
+This approach allows organizations to balance governance effectiveness, performance, scalability, and operational cost without applying identical observation requirements to every activity.
+
+## Sampling Considerations
+
+Sampling may be used as an implementation strategy in certain environments.
+
+However, tiered observation is the primary cost-management mechanism within MA Root.
+
+Organizations should evaluate the tradeoff between reduced observation cost and reduced audit completeness when using sampling techniques.
