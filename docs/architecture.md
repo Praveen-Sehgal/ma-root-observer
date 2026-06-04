@@ -99,6 +99,8 @@ Tier definitions determine the depth of observation, assessment, and logging app
 
 Even Tier 0 activities remain subject to core governance principles. Tier 0 simply represents minimal observation requirements for low-consequence activities.
 
+Governance defines the rules, principles, lenses, and evaluation mechanisms used by Observers during assessment.
+
 ## High-Level Flow
 
 User Request
