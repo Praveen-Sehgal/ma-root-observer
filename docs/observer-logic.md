@@ -212,3 +212,29 @@ The existence of a recommendation does not automatically determine the outcome.
 
 MA Root preserves decision accountability by separating assessment from decision-making.
 
+## Decision Traceability
+
+When practical, observation logs should record:
+
+- Observer assessment
+- Observer recommendation
+- Final decision
+- Decision authority
+- Outcome
+
+This creates a traceable record showing not only what was recommended, but also what decision was ultimately made.
+
+Example:
+
+Observer Assessment: HIGH RISK
+
+Recommendation: Human Review Required
+
+Decision Authority: Operations Manager
+
+Final Decision: Proceed
+
+Outcome: Logged
+
+The recommendation remains part of the audit trail regardless of whether it was followed.
+
