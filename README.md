@@ -23,6 +23,12 @@ MA Root is not tied to a specific AI model, framework, programming language, dat
 
 Organizations may implement MA Root using different technologies while preserving the architectural principles.
 
+MA Root is currently an architectural specification, not a completed software framework.
+
+The goal of this project is to define the governance architecture, core responsibilities, interfaces, principles, and implementation expectations.
+
+Reference implementations may be developed later by contributors, research teams, or organizations interested in applying the architecture.
+
 ## ⚡ How It Works
 
 User → Entity ↔ Observer → Entity Decision → Action → Log
