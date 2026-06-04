@@ -156,4 +156,18 @@ Entity → Observer → Senior Observer
 
 Independent organizations maintain their own Observers while optionally sharing collective experience data.
 
+## Implementation Independence
+
+Deployment models are implementation choices, not governance requirements.
+
+MA Root does not require:
+
+- One Observer per Entity
+- Dedicated infrastructure
+- Centralized deployment
+- Distributed deployment
+- Specific hardware or software platforms
+
+Organizations are free to select the deployment model that best fits their environment while preserving the governance responsibilities defined by the architecture.
+
 
