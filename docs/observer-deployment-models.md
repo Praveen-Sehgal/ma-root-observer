@@ -6,6 +6,28 @@ Observation depth scales according to consequence, risk, and accountability requ
 
 Observation is consequence-driven, not complexity-driven.
 
+## Observation Tiers and Deployment Models
+
+Observation Tiers and Deployment Models are independent concepts.
+
+Observation Tiers define the depth of assessment, evidence requirements, risk analysis, and logging expectations associated with an activity.
+
+Deployment Models define how Observer instances are allocated and operated within a system.
+
+A Tier 4 assessment does not require a dedicated Observer instance.
+
+Likewise, a Tier 0 assessment does not imply the absence of an Observer.
+
+Examples:
+
+* A single Observer may assess thousands of low-risk entities.
+* A shared Observer pool may support multiple entities across different tiers.
+* A dedicated Observer may be assigned to a single high-risk entity.
+* Hybrid deployments may combine shared and dedicated Observers.
+
+MA Root does not mandate a specific deployment strategy. Organizations are free to select deployment models based on performance, cost, scalability, and operational requirements.
+
+
 ## Tier 0
 
 Routine factual retrieval.
@@ -99,4 +121,39 @@ Implementations may determine observation depth using:
 - Organizational policies
 
 Observation is consequence-driven, not complexity-driven.
+
+## Example Deployment Models
+
+### One-to-One
+
+Each Entity is paired with a dedicated Observer.
+
+Entity A ↔ Observer A
+
+Entity B ↔ Observer B
+
+### Shared Observer
+
+Multiple Entities are assessed by a common Observer.
+
+Entity A ┐
+Entity B ├─ Observer
+Entity C ┘
+
+### Observer Pool
+
+Entities submit assessments to a pool of available Observers.
+
+Entity → Observer Pool
+
+### Hierarchical Observation
+
+Primary Observers perform assessments while higher-level Observers review selected decisions or aggregated outcomes.
+
+Entity → Observer → Senior Observer
+
+### Federated Observation
+
+Independent organizations maintain their own Observers while optionally sharing collective experience data.
+
 
