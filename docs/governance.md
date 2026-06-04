@@ -195,3 +195,22 @@ Future implementations may include:
 * Tamper-evident logging
 * Community-maintained evaluation lenses
 * Cross-organization standards
+
+---
+
+### Assessment and Enforcement Separation
+
+MA Root intentionally separates assessment from enforcement.
+
+Observers are responsible for evaluating actions, generating risk assessments, providing recommendations, and recording observations.
+
+Observers are not responsible for deciding outcomes.
+
+An Observer may classify an action as LOW, MEDIUM, HIGH, or CRITICAL risk. However, that assessment alone does not determine whether the action proceeds, is paused, requires approval, or is rejected.
+
+Response decisions are the responsibility of a separate policy layer, organization, regulator, human reviewer, or system owner.
+
+This separation preserves accountability and prevents governance components from becoming autonomous authorities.
+
+MA Root defines how observations are produced and recorded. It does not prescribe how organizations must respond to those observations.
+
