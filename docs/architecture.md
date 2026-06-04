@@ -207,6 +207,13 @@ Tiers define observation requirements.
 
 Deployment models define implementation choices.
 
+## Observer Position
+
+The Observer operates alongside the Entity.
+
+The Observer may evaluate Entity intent, proposed actions, completed actions, outcomes, and consequences.
+
+The Observer provides assessment, recommendations, and observation records without replacing the Entity's decision-making responsibilities.
 
 ## Model Agnostic Design
 
