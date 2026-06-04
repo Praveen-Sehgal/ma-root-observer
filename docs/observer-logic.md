@@ -196,3 +196,19 @@ The output of an Observer is an assessment, not a command.
 
 Organizations may choose to use Observer assessments as inputs into approval workflows, escalation processes, compliance reviews, or automated policy engines, but those enforcement mechanisms exist outside the Observer itself.
 
+## Recommendation Acceptance
+
+Observer recommendations are advisory by design.
+
+Entities, human reviewers, or organizational policy mechanisms may choose to:
+
+- Accept a recommendation
+- Reject a recommendation
+- Escalate a recommendation
+- Request additional review
+- Proceed despite a recommendation
+
+The existence of a recommendation does not automatically determine the outcome.
+
+MA Root preserves decision accountability by separating assessment from decision-making.
+
