@@ -111,3 +111,21 @@ The Observer provides guidance.
 The Entity makes decisions.
 
 Policies and organizations determine enforcement behavior.
+
+## Real-World Analogy
+
+An Observer is comparable to:
+
+- A Compliance Officer
+- An Auditor
+- A Risk Analyst
+- A Safety Inspector
+
+An Observer is not comparable to:
+
+- A Judge
+- A CEO
+- A Government Regulator
+- A Final Decision Maker
+
+Observers provide information and recommendations. Decision authority remains elsewhere.
