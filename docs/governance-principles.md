@@ -43,3 +43,9 @@ Examples of Evaluation Lenses include:
 - Military Lens
 - Enterprise Lens
 - Research Lens
+
+## Core governance principles apply across all Observation Tiers.
+
+Observation Tiers determine how governance is assessed and recorded, not whether governance exists.
+
+No Observation Tier is exempt from fundamental governance principles.
