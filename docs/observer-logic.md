@@ -181,7 +181,13 @@ The Observer does not:
 
 Responsibility for final action remains with the Entity or external organizational policy.
 
----
+## Decision Accountability
+
+Observer recommendations do not transfer decision responsibility.
+
+When an Entity chooses to proceed, modify, reject, or ignore a recommendation, accountability for that decision remains with the decision authority.
+
+Observation records should make this decision traceable whenever practical.
 
 ### Observer Responsibilities
 
