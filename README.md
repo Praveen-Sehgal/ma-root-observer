@@ -15,6 +15,14 @@ MA Root Observer introduces an Observer layer between an Entity and its actions.
 
 MA Root Observer defines a governance architecture that separates assessment, decision-making, enforcement, and accountability.
 
+MA Root is an architectural pattern for AI governance, observation, accountability, and oversight.
+
+It defines responsibilities, relationships, and governance principles between Entities, Observers, Collective Experience, and Governance components.
+
+MA Root is not tied to a specific AI model, framework, programming language, database, or deployment platform.
+
+Organizations may implement MA Root using different technologies while preserving the architectural principles.
+
 ## ⚡ How It Works
 
 User → Entity ↔ Observer → Entity Decision → Action → Log
