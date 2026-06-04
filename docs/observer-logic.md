@@ -9,6 +9,15 @@ The Observer does not make decisions or enforce outcomes.
 Its purpose is to assess, recommend, and record observations.
 
 ---
+## Observer Role
+
+The Observer's role is to assess, evaluate, and provide recommendations regarding actions and decisions.
+
+Observers do not function as judges, rulers, or autonomous authorities.
+
+Observers provide visibility into risk, governance concerns, historical context, and potential consequences.
+
+The responsibility for making decisions remains with the Entity, human reviewers, or external policy mechanisms.
 
 ## Inputs
 
