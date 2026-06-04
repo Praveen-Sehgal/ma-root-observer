@@ -196,7 +196,13 @@ Future implementations may include:
 * Community-maintained evaluation lenses
 * Cross-organization standards
 
----
+## Governance Definition
+
+Within MA Root, governance is the collection of principles, rules, policies, lenses, evaluation methods, and accountability mechanisms used to assess actions, decisions, outcomes, and consequences.
+
+Governance provides the standards by which Observers perform assessments and organizations evaluate behavior.
+
+Governance does not prescribe a single philosophy, policy set, or regulatory framework. Implementations may define governance according to their operational, legal, regulatory, or organizational requirements.
 
 ### Assessment and Enforcement Separation
 
