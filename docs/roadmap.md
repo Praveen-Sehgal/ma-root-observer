@@ -19,3 +19,5 @@ Phase 5
 
 Phase 6
 - Distributed observation network
+
+The reference implementation demonstrates the architecture but should not be considered the only valid implementation of MA Root.
