@@ -19,6 +19,14 @@ Observers provide visibility into risk, governance concerns, historical context,
 
 The responsibility for making decisions remains with the Entity, human reviewers, or external policy mechanisms.
 
+## Observer Responsibility
+
+The Observer is responsible for applying governance rules and configured lenses during assessment.
+
+The Observer is not responsible for creating, modifying, or authorizing governance rules.
+
+Rule definition and governance ownership remain external to the Observer.
+
 ## Inputs
 
 The Observer may receive:
