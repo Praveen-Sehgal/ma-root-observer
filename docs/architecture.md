@@ -164,8 +164,7 @@ Significant concerns or potential harm identified.
 
 The Observer records the critical assessment, relevant rules or lenses, policy clashes if any, and assessment calculations needed for traceability.
 
-A CRITICAL assessment does not automatically block execution. Enforcement decisions belong to the Entity or external organizational policy.
-
+A CRITICAL assessment does not automatically block execution. Response and enforcement decisions remain the responsibility of the Entity, human reviewers, or external organizational policy.
 ---
 
 ## Logging Layer
@@ -189,6 +188,18 @@ Each observation may include:
 Implementations may use databases, distributed ledgers, event streams, object storage, or other storage mechanisms.
 
 ---
+## Tier Definition
+
+Observation Tiers describe the level of observation applied to an activity.
+
+They do not describe infrastructure topology, Observer allocation, hardware requirements, or deployment architecture.
+
+The same deployment model may support multiple observation tiers, and the same observation tier may be implemented using different deployment models.
+
+Tiers define observation requirements.
+
+Deployment models define implementation choices.
+
 
 ## Model Agnostic Design
 
