@@ -214,3 +214,15 @@ This separation preserves accountability and prevents governance components from
 
 MA Root defines how observations are produced and recorded. It does not prescribe how organizations must respond to those observations.
 
+## Governance Responsibility
+
+MA Root defines governance principles and evaluation mechanisms.
+
+Observers are responsible for applying governance principles, rules, and configured lenses consistently during assessment.
+
+Observers are not responsible for defining governance rules.
+
+Governance rule definition remains the responsibility of MA Root principles, organizational policy, regulators, standards bodies, or other governance authorities.
+
+An Observer may incorrectly assess a situation, but it should not modify governance rules to justify a desired outcome.
+
