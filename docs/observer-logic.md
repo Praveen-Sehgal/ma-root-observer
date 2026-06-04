@@ -163,3 +163,27 @@ The Observer does not:
 * Enforce decisions
 
 Responsibility for final action remains with the Entity or external organizational policy.
+
+---
+
+### Observer Responsibilities
+
+An Observer is responsible for:
+
+* Evaluating actions and decisions
+* Applying governance principles
+* Assessing risk and consequences
+* Providing recommendations
+* Recording observations and evidence
+
+An Observer is not responsible for:
+
+* Executing actions
+* Overriding entities
+* Making organizational decisions
+* Determining enforcement outcomes
+
+The output of an Observer is an assessment, not a command.
+
+Organizations may choose to use Observer assessments as inputs into approval workflows, escalation processes, compliance reviews, or automated policy engines, but those enforcement mechanisms exist outside the Observer itself.
+
