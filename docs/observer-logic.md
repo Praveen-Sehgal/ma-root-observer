@@ -47,7 +47,7 @@ The Observer performs the following steps:
    * Historical observations
    * Context information
 
-7. Assign assessment tier
+7. Assign assessment outcome
 
 8. Generate recommendations when appropriate
 
@@ -86,7 +86,7 @@ Lenses contribute additional information to the assessment process.
 
 ---
 
-## Assessment Tiers
+## Assessment Outcomes
 
 ### Tier 1 - APPROVE
 
@@ -151,7 +151,7 @@ When a configured lens conflicts with a MA Root fundamental rule:
 
 The Observer records:
 
-* Assessment tier
+* Assessment outcome
 * Recommendations
 * Rules applied
 * Lenses applied
