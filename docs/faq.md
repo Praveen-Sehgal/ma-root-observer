@@ -106,6 +106,6 @@ The framework seeks to provide independent assessment and transparent oversight 
 
 ## Does every Entity need a dedicated Observer?
 
-No. MA Root Observer defines a logical observer relationship, not a required deployment topology. Implementations may use dedicated observers, shared observer pools, or hybrid models. The assessment tier still represents the Observer’s evaluation outcome, not the number of Observer instances assigned to an Entity.
+No. MA Root Observer defines a logical observer relationship, not a required deployment topology. Implementations may use dedicated observers, shared observer pools, or hybrid models. Observation Tier represents evaluation depth.Assessment Outcome represents the Observer's conclusion.e, not the number of Observer instances assigned to an Entity.
 
 ---
