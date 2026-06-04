@@ -2,9 +2,9 @@
 
 ## Purpose
 
-MA Root Observer is a model-agnostic governance framework designed to provide guidance, transparency, accountability, and auditability for AI systems.
+MA Root Observer is a model-agnostic governance architecture designed to provide guidance, transparency, accountability, and auditability for AI systems.
 
-The framework introduces an Observer layer that evaluates an Entity's intended, proposed, or completed actions and records the assessment process without replacing the decision-making capabilities of the underlying system.
+The architecture introduces an Observer layer that evaluates an Entity's intended, proposed, or completed actions and records the assessment process without replacing the decision-making capabilities of the underlying system.
 
 ---
 
