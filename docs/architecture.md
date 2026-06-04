@@ -235,7 +235,13 @@ Organizations may implement custom:
 
 Core framework interfaces should remain stable to encourage interoperability across implementations.
 
----
+## Implementation Flexibility
+
+MA Root defines governance responsibilities and interactions, not infrastructure requirements.
+
+Organizations may implement Observers using different deployment models based on operational needs, scalability requirements, performance targets, cost considerations, and regulatory constraints.
+
+The architecture intentionally separates governance design from implementation design.
 
 ## Future Enhancements
 
