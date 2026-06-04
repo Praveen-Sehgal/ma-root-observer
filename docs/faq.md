@@ -101,3 +101,11 @@ The Entity decides.
 ## What problem is MA Root Observer trying to solve?
 
 The framework seeks to provide independent assessment and transparent oversight without removing autonomy from the systems it observes.
+
+---
+
+## Does every Entity need a dedicated Observer?
+
+No. MA Root Observer defines a logical observer relationship, not a required deployment topology. Implementations may use dedicated observers, shared observer pools, or hybrid models. The assessment tier still represents the Observer’s evaluation outcome, not the number of Observer instances assigned to an Entity.
+
+---
