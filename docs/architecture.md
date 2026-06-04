@@ -91,6 +91,13 @@ Configured lenses cannot override or conflict with MA Root fundamental rules.
 
 If a configured lens conflicts with a fundamental rule, the Observer applies the fundamental rule and records the conflict as a policy clash.
 ---
+## Governance at All Tiers
+
+All Observation Tiers operate within the same governance framework and fundamental principles.
+
+Tier definitions determine the depth of observation, assessment, and logging applied to an activity. They do not determine whether governance exists.
+
+Even Tier 0 activities remain subject to core governance principles. Tier 0 simply represents minimal observation requirements for low-consequence activities.
 
 ## High-Level Flow
 
