@@ -65,3 +65,32 @@ That observation becomes available through Collective Experience.
 Observer B may consider that historical outcome during future assessments, but must still evaluate the current situation independently.
 
 The prior observation serves as evidence, not authority.
+
+## Collective Experience vs Memory
+
+Collective Experience is not intended to function as a traditional memory system, vector database, or retrieval mechanism.
+
+Its purpose is to preserve and share observations, outcomes, lessons learned, historical patterns, successes, failures, and governance-relevant experience across Observer instances.
+
+While implementation may utilize databases, knowledge stores, or retrieval technologies, Collective Experience represents accumulated governance experience rather than general-purpose memory.
+
+## Experience-Based Evidence
+
+Collective Experience may contain:
+
+- Historical observations
+- Prior outcomes
+- Risk patterns
+- Successful mitigation strategies
+- Known failure scenarios
+- Governance lessons learned
+
+Collective Experience is intended to provide context and evidence for assessments rather than serve as a source of authority.
+
+Example:
+
+A previous assessment identified a recurring compliance issue involving a specific workflow.
+
+The observation, outcome, and lessons learned become part of Collective Experience.
+
+Future Observers may consider that historical information as evidence when evaluating similar situations.
