@@ -31,7 +31,7 @@ Fundamental rules provided by MA Root cannot be ignored by the Observer.
 
 ### 2. Observer
 
-The Observer is an independent evaluation component attached to an Entity.
+The Observer is an independent evaluation component that operates alongside an Entity.
 
 Responsibilities:
 
@@ -41,7 +41,7 @@ Responsibilities:
 * Identify risks, harms, and conflicts
 * Apply configured lenses when available
 * Detect conflicts between configured lenses and MA Root fundamental rules
-* Generate assessment tiers
+* Generate assessment outcomes
 * Generate recommendations when appropriate
 * Record observations, recommendations, calculations, and policy conflicts
 * Maintain audit history
@@ -113,17 +113,11 @@ Entity Forms Intent or Proposed Action
 
 ↓
 
-Observer Evaluation
-   ├── Fundamental Rules
-   └── Configurable Lenses
+Observer Assessment
 
 ↓
 
-Assessment Outcome Generated
-
-↓
-
-Recommendation Generated When Needed
+Assessment Outcome and Recommendations
 
 ↓
 
