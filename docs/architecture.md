@@ -119,7 +119,7 @@ Observer Evaluation
 
 ↓
 
-Assessment Tier Generated
+Assessment Outcome Generated
 
 ↓
 
@@ -139,17 +139,17 @@ Observation Logged
 
 ---
 
-## Assessment Tiers
+## Assessment Outcomes
 
-The Observer produces one of the following assessment tiers:
+The Observer produces one of the following assessment:
 
-### Tier 1: APPROVE
+### 1: APPROVE
 
 No significant concerns detected.
 
 The observation is recorded for traceability and auditability.
 
-### Tier 2: WARN
+### 2: WARN
 
 Potential concerns identified.
 
@@ -157,7 +157,7 @@ The Observer may generate a recommendation.
 
 The Observer records the reason for the warning, relevant rules or lenses, and assessment calculations needed for traceability.
 
-### Tier 3: ESCALATE
+### 3: ESCALATE
 
 Higher concern identified.
 
@@ -165,7 +165,7 @@ The Observer may recommend human or organizational review.
 
 The Observer records the reason for escalation, relevant rules or lenses, and assessment calculations needed for traceability.
 
-### Tier 4: CRITICAL
+### 4: CRITICAL
 
 Significant concerns or potential harm identified.
 
@@ -183,7 +183,7 @@ Each observation may include:
 * Request summary
 * Entity intent or proposed action
 * Entity action
-* Observer assessment tier
+* Observer assessment outcome
 * Recommendation, if generated
 * Fundamental rules applied
 * Configurable lenses applied
