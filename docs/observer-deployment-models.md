@@ -170,4 +170,12 @@ MA Root does not require:
 
 Organizations are free to select the deployment model that best fits their environment while preserving the governance responsibilities defined by the architecture.
 
+## Deployment Neutrality Principle
+
+The governance behavior of MA Root should remain consistent regardless of deployment topology.
+
+Whether an Observer is dedicated, shared, pooled, hierarchical, or federated, the Observer remains responsible for assessment, recommendation, and observation logging.
+
+Deployment choices should not alter governance responsibilities.
+
 
